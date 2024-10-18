@@ -20,14 +20,13 @@ function TextInputFormContainer() {
     setValue(event.target.value);
   }
   function handleShowHideClick() {
-    console.log("Show/Hide Button clicked");
     if (inputType === "password") {
       setInputType("text");
     } else {
       setInputType("password");
     }
-    console.log(inputType);
   }
+
   return (
     <TextInputForm
       inputType={inputType}
